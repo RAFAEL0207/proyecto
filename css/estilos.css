@@ -1,0 +1,253 @@
+* {
+	padding: 0;
+	margin: 0;
+	
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background:#D5C7BC;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.titulo1{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    display: flex;
+	justify-content:center;
+	align-items:center;
+	font-family:Matura MT Script Capitals;
+	font-size:50px;
+} 
+
+/*MODIFICADO*/
+/*main agregado 06/03*/
+
+	nav ul li {
+	  
+	  
+	 
+	  
+	  
+	  margin: 15px;
+	  border-radius: 10px; 
+	  
+	  
+	 
+	
+	}
+	.naveg li:first-child{
+		display: block;
+	}
+.naveg li a{
+	color: #513B3C;
+
+}
+	
+.subnav > li {	  
+	width: 130px;
+	transform: translateX(-25px);
+	
+	margin: 2px;  
+	text-align: center;
+	background-color:#776673; 
+	
+	}
+.subnav > li:hover{
+	margin: 0px 12px;}
+	
+.develop:hover > .subnav{
+	display: block;
+	
+	}
+
+.subnav{
+	display: none;
+	position: absolute;  
+	padding: 10px;
+	}
+	 
+
+
+/*reuso*/
+header{
+	background:#DEE8D5;
+	width: 100%;
+	padding: 20px ;
+    display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.naveg{
+	
+	
+	font-size: 20px;
+	font-family:Matura MT Script Capitals;
+	
+
+
+
+
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-right: 20px;
+}
+.naveg li:hover{
+	background:#AC92A6;
+	padding:2px;
+
+}
+
+
+.main {
+	background: #E9FAE3;
+	padding: 40px;
+	width: 70%;
+}
+
+/**/
+aside {
+	width: 30%;
+	background: #FFFFFF;
+	padding: 30px;
+	
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.img1{
+	width:100%;
+}
+
+.img2{
+	width:100%;
+	padding-top:20px;
+}
+
+li{
+	list-style:none;
+	
+}
+.enla1{
+	display:flex;
+	justify-content:center;
+	padding-bottom:40px;
+	text-decoration:none;
+}
+
+.parra1{
+	padding-bottom:20px;
+}
+
+.parra2{
+	font-family:Matura MT Script Capitals;
+	text-align:center;
+}
+
+.art1{
+	border: 1px solid #000000;
+	padding:30px;
+
+
+}
+
+#redi0{
+	padding-bottom:20px;
+}
+
+#redi1{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+#redi2{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+#redi3{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+#redi4{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+#redi5{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+footer {
+	margin-top: 20px;
+	background: #DEE8D5;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: black;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:center;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	aside {
+		display: none;
+	}
+}
+/*DESDE AQUI HASTA ABAJO NO FUNCIONA*/
+/*menu reductor*/
+.responsive li {
+	display: block;
+}
+
+
+@media only screen and (min-width:32.5em){
+	.naveg {
+		display:flex;
+	}
+	.naveg li:first-child{
+		display: none;
+	}
+	.naveg li{
+		display: block;
+		flex: 1 1 100%;
+	}
+	.naveg li a {
+		color: aqua;
+	}
+}
