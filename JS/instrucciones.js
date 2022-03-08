@@ -40,3 +40,44 @@ function registrar(){
 function Menud() {
     document.getElementsByClassName("naveg")[0].classList.toggle("responsive");
 }
+
+const texto = document.getElementById('logo')
+const letras = texto.innerText.split("");
+
+texto.innerText= '';
+
+letras.forEach((letra) => {
+    let caracter = letra === ' ' ? '&nbsp;' : letra;
+
+
+    texto.innerHTML = texto.innerHTML + `
+    <div>
+        <span>${caracter}</span>
+        <span class="segunda-linea">${caracter}</span>
+    </div>
+    `
+});
+texto.addEventListener('mouseenter',() =>{
+    let cuenta = 0;
+
+    const intervalo = setInterval(() => {
+        if(cuenta < texto.children.length){
+            texto.children[cuenta].classList.add('animacion');
+            cuenta = cuenta +1;
+        } else{
+            clearInterval(intervalo);
+        }
+    }, 30);
+});
+texto.addEventListener('mouseleave',() =>{
+    let cuenta = 0;
+
+    const intervalo = setInterval(() => {
+        if(cuenta < texto.children.length){
+            texto.children[cuenta].classList.remove('animacion');
+            cuenta = cuenta +1;
+        } else{
+            clearInterval(intervalo);
+        }
+    }, 30);
+});

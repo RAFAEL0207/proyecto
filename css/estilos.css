@@ -1,3 +1,4 @@
+
 * {
 	padding: 0;
 	margin: 0;
@@ -11,7 +12,9 @@ body {
 	background:#D5C7BC;
 	background-size: cover;
 	background-attachment: fixed;
+	background-image: url(fondo.jpg);	
 }
+
 
 .contenedor {
 	margin: auto;
@@ -63,7 +66,7 @@ body {
 	
 	margin: 2px;  
 	text-align: center;
-	background-color:#776673; 
+	background-color:#667767; 
 	
 	}
 .subnav > li:hover{
@@ -84,7 +87,7 @@ body {
 
 /*reuso*/
 header{
-	background:#DEE8D5;
+	background:#dee8d594;
 	width: 100%;
 	padding: 20px ;
     display: flex;
@@ -108,14 +111,14 @@ header{
 	margin-right: 20px;
 }
 .naveg li:hover{
-	background:#AC92A6;
+	background:#79b98e;
 	padding:2px;
 
 }
 
 
 .main {
-	background: #E9FAE3;
+	background: #90ac86e7;
 	padding: 40px;
 	width: 70%;
 }
@@ -123,7 +126,7 @@ header{
 /**/
 aside {
 	width: 30%;
-	background: #FFFFFF;
+	background: #ffffffde;
 	padding: 30px;
 	
 	display: flex;
@@ -248,6 +251,34 @@ footer {
 		flex: 1 1 100%;
 	}
 	.naveg li a {
-		color: aqua;
+		color: rgb(2, 2, 2);
 	}
+}
+.logotipo{
+	font-family:Matura MT Script Capitals;
+	padding: 10px;
+	color: white
+}
+.texto-animado{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.texto-animado > div{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+.texto-animado > div.animacion{
+	transform: translateY(-85px);
+}
+.texto-animado > div span{
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 80px;
+}
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 80px;
 }
