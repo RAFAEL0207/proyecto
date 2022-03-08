@@ -6,52 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
     
 </head>
-
 <body>
-    
-        <a href="#" class="logotipo">
-            <div class="texto-animado" id="logo">Arquitectura Cliente-Servidor</div>
+    <a href="#" class="logotipo">
+        <div class="texto-animado" id="logo">Arquitectura Cliente-Servidor</div>
 
-        </a> 
-        <div class="flex-center">
-            <div id="fondo" class="flex-center"> 
-                
-            </div>
-
+    </a> 
+    <div class="flex-center">
+        <div id="fondo" class="flex-center"> 
+            
         </div>
+
+    </div> 
     
     <div class="contenedor">
         
         <header>
-            
-            <nav>
-            
-            
-            
-                <ul class="naveg">
-                    <li><a href="#" onclick="Menud()">&#9776; Menu</a></li>
-                    <li><a class="active" href="index.html">Inicio</a></li>
-                    <li class="develop"><a href="#">Nosotros</a>
-                      <ul class="subnav">
-                          <li><a href="regis.html"target="_blank">Regístrate</a></li>
-                          <li><a href="#">Comandos Básicos</a></li>
-                          <li><a href="#">ejmplo</a></li>
-                          <li><a href="#">ejemplo</a></li>
-                      </ul>
-                    </li>
-                    <li class="develop"><a href="">Informe</a>
-                      <ul class="subnav">
-                          <li><a href="#">Ejemplo</a></li>
-                          <li><a href="#">Ejemplo</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="Bibliografia.html">Bibliografía</a></li>
-                    
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-              </nav>
+             
+            <div class="container__menu">
+
+                <div class="menu">
+                    <input type="checkbox" id="check__menu">
+                    <label for="check__menu" id="label__check">
+                        <i class="fas fa-bars icon__menu"></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" id="selected"></a></li>
+                            <li><a href="#">Nosotros</a>
+                                <ul>
+                                    <li><a href="#">Contacto</a></li>
+                                    <li><a href="regis.html">Regístrate</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#">Informe</a>
+                                <ul>
+                                    <li><a href="Bibliografia.html">Bibliografía</a></li>
+                                   
+                                    
+                                </ul>
+                            
+                            
+                            
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+    
+            </div>
         </header>
 
         <aside>

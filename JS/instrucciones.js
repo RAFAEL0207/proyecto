@@ -21,7 +21,11 @@ function registrar(){
                 document.getElementById("cor").focus();
             }else{
             console.log("Usuario registrado: ")
-            console.log("Nombre Completo: "+nombres + " "+apellidos+" "+" Contraseña:"+ contraseña +" Teléfono: "+telf+" "+correo+" "+ " "+fecha+" ");
+            console.log("Nombre Completo: "+nombres + " "+apellidos);
+            console.log("Contraseña:"+ contraseña);
+            console.log("Teléfono: "+telf);
+            console.log("Correo: "+correo);
+            console.log("Fecha de nacimiento: "+fecha);
             document.getElementById("name").value="";
             document.getElementById("apell").value="";
             document.getElementById("pass").value="";
@@ -36,10 +40,7 @@ function registrar(){
     }
 }
 
-
-function Menud() {
-    document.getElementsByClassName("naveg")[0].classList.toggle("responsive");
-}
+/**TEXTO ANIMADO */
 
 const texto = document.getElementById('logo')
 const letras = texto.innerText.split("");
@@ -81,3 +82,15 @@ texto.addEventListener('mouseleave',() =>{
         }
     }, 30);
 });
+
+
+
+
+
+
+
+
+
+
+
+
