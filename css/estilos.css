@@ -491,9 +491,41 @@ footer {
 }
 /*BIBLIOGRAFIA*/
 .articc{
+    
 	border: 1px solid #000000;
 	padding:30px;
 	background: #41773c;
 
+    
+}
 
+.imgC{
+  
+    width: 50px;
+    padding: auto;
+    
+}
+
+.cont{
+    background: #41773c;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .texto-animado > div span {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .texto-animado .segunda-linea{
+        top: 40px;
+    }
+
+    .texto-animado > div.animacion{
+        transform: translateY(-40px);
+    }
+}
+
+.focus:focus{
+    
 }

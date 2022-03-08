@@ -1,0 +1,13 @@
+### VACUNAS
+###
+GET https://dry-everglades-66411.herokuapp.com/updsvacuna/
+
+### CENTRO VACUNACION
+###
+GET https://dry-everglades-66411.herokuapp.com/updscentro/
+
+
+### VACUNACION
+###
+GET https://dry-everglades-66411.herokuapp.com/updsvacunacion/
+
